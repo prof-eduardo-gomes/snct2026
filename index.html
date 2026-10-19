@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mostra de Trabalhos — SNCT 2026 | IFSC Câmpus Canoinhas</title>
+  <meta name="description" content="Mostra de trabalhos científicos, tecnológicos e relatos de experiência da SNCT 2026 - Ciência Delas no IFSC Câmpus Canoinhas.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="thumb.png">
+
+  <!-- Font Awesome 6 (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Bar Institucional -->
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="top-bar-content">
+        <div>
+          <span>Instituto Federal de Santa Catarina — <strong>Câmpus Canoinhas</strong></span>
+        </div>
+        <div class="top-bar-badge">
+          Semana Nacional de Ciência e Tecnologia 2026
+        </div>
+      </div>
+    </div>
+
+    <!-- Banner Oficial do Evento -->
+    <div class="banner-wrapper">
+      <div class="banner-container">
+        <img 
+          src="banner.jpg" 
+          alt="Banner Oficial da SNCT 2026 - Ciência Delas - IFSC Câmpus Canoinhas, CNPq e Ministério da Ciência, Tecnologia e Inovação" 
+          class="banner-img"
+          loading="eager"
+        >
+      </div>
+    </div>
+
+    <!-- Apresentação do Evento e Métricas -->
+    <section class="hero-content">
+      <div class="hero-pill">
+        <i class="fa-solid fa-wand-magic-sparkles"></i> Mostra de Ensino, Pesquisa e Extensão
+      </div>
+      <h1 class="hero-title">
+        Apresentação de Trabalhos <span class="highlight">SNCT 2026</span>
+      </h1>
+      <p class="hero-desc">
+        Conheça as produções científicas, inovações tecnológicas e relatos de experiência desenvolvidos pela comunidade acadêmica do IFSC Câmpus Canoinhas sob a temática <em>"Ciência Delas"</em>. Clique nos cartões para assistir às apresentações em vídeo.
+      </p>
+
+      <!-- Cartões de Métricas Dinâmicas -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon purple"><i class="fa-solid fa-book-open"></i></div>
+          <div>
+            <div class="stat-number" id="stat-total-works">62</div>
+            <div class="stat-label">Trabalhos Cadastrados</div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon coral"><i class="fa-solid fa-video"></i></div>
+          <div>
+            <div class="stat-number" id="stat-total-videos">54</div>
+            <div class="stat-label">Vídeos Disponíveis</div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon green"><i class="fa-solid fa-tags"></i></div>
+          <div>
+            <div class="stat-number" id="stat-total-categories">5</div>
+            <div class="stat-label">Categorias Temáticas</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <!-- Barra de Filtros e Pesquisa Fixa -->
+  <section class="controls-section" id="controles">
+    <div class="controls-container">
+      <div class="controls-row-top">
+        <!-- Campo de Pesquisa em Tempo Real -->
+        <div class="search-wrapper">
+          <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+          <input 
+            type="text" 
+            id="search-input" 
+            class="search-input" 
+            placeholder="Pesquisar por título, autor ou número (#ID)..."
+            aria-label="Pesquisar trabalhos"
+          >
+          <button id="clear-search-btn" class="search-clear-btn" title="Limpar pesquisa" aria-label="Limpar pesquisa"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <!-- Filtro Rápido por Status do Vídeo -->
+        <div class="status-filters">
+          <button class="status-btn active" data-status="all"><i class="fa-solid fa-border-all"></i> Todos</button>
+          <button class="status-btn" data-status="with_video"><i class="fa-solid fa-circle-play"></i> Com Vídeo</button>
+          <button class="status-btn" data-status="pending"><i class="fa-regular fa-clock"></i> Em Breve</button>
+        </div>
+      </div>
+
+      <!-- Abas de Categoria com Badges de Contagem -->
+      <nav class="categories-tabs" id="categories-tabs" aria-label="Filtro por categorias">
+        <!-- Gerado dinamicamente pelo app.js -->
+      </nav>
+    </div>
+  </section>
+
+  <!-- Lista de Trabalhos Organizada por Categorias -->
+  <main class="main-content" id="works-container">
+    <!-- Trabalhos e seções de categoria renderizados via app.js -->
+  </main>
+
+  <!-- Modal Interativo de Vídeo e Detalhes -->
+  <div class="modal-backdrop" id="work-modal" role="dialog" aria-modal="true" aria-labelledby="modal-work-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <span class="modal-category-badge" id="modal-work-category">Categoria</span>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Fechar janela de detalhes">&times;</button>
+      </div>
+
+      <!-- Área do Player de Vídeo -->
+      <div class="modal-player-container" id="modal-player">
+        <!-- Iframe do YouTube ou Player Embed inserido dinamicamente -->
+      </div>
+
+      <!-- Informações Detalhadas do Trabalho -->
+      <div class="modal-body">
+        <div class="modal-work-id" id="modal-work-id">Trabalho #01</div>
+        <h2 class="modal-work-title" id="modal-work-title">Título do Trabalho</h2>
+
+        <div class="modal-authors-box">
+          <div class="modal-authors-label">Autores do Trabalho:</div>
+          <div class="modal-authors-list" id="modal-work-authors">Nomes dos autores</div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn-secondary" id="modal-share-btn"><i class="fa-solid fa-share-nodes"></i> Compartilhar</button>
+        <button class="btn-secondary" id="modal-close-footer-btn"><i class="fa-solid fa-xmark"></i> Fechar</button>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-primary" id="modal-external-link">
+          Abrir no YouTube <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.85em; margin-left:4px;"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container de Toasts para Notificações -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Botão Flutuante Voltar ao Topo -->
+  <button class="back-to-top" id="back-to-top" title="Voltar ao início" aria-label="Voltar ao início"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- Rodapé Institucional -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-brand-title">SNCT 2026 — Ciência Delas</div>
+        <div class="footer-brand-sub">Semana Nacional de Ciência e Tecnologia • IFSC Câmpus Canoinhas</div>
+      </div>
+      <div class="footer-credits">
+        <p>Apoio: CNPq • Ministério da Ciência, Tecnologia e Inovação • Governo Federal do Brasil</p>
+        <p style="margin-top: 6px; font-size: 0.75rem; opacity: 0.7;">
+          Instituto Federal de Santa Catarina — Câmpus Canoinhas | Av. Expedicionários, 2150 - Campo d'Água Verde, Canoinhas - SC
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="trabalhos.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
