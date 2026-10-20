@@ -118,13 +118,6 @@ const TRABALHOS_DATA = [
     "link": "https://www.youtube.com/watch?v=gVnB-V3fF-Y"
   },
   {
-    "id": 16,
-    "titulo": "ELEMENTOS DA LINGUAGEM VISUAL: UM OLHAR INTERDISCIPLINAR ENTRE CURSOS INTEGRADOS DO IFSC CANOINHAS",
-    "autores": "Rafaela de Avila Farias Bordignon, Maria Eduarda Reis de Souza, Maria Eduarda Leite, Morena Zan Caje Da Paixao, Renan Padilha Wengrizinovski, Izacarla Benjamim Gonçalves",
-    "categoria": "Relatos",
-    "link": ""
-  },
-  {
     "id": 17,
     "titulo": "Extensão e Ressocialização: Formação Técnica na Fabricação de Pavers",
     "autores": "Daiane Caroline Wagner, Cinthia Wambier Adimari, Neusa Aparecida Munhak Beltrame, Camila Fernandes Komochena, Ana Julia Meneguzzo, Guilhermy de Oliveira, Manuely Teixeira, Matheus Ernani Piermann Dilda",
@@ -200,13 +193,6 @@ const TRABALHOS_DATA = [
     "autores": "Gabriel Fagundes Fernandes, Renan Padilha Wengrizinovski, Diovana de Mello Lalis, Jamille Valéria Piovesan, Natieli Piovesan",
     "categoria": "Edificações",
     "link": "https://drive.google.com/file/d/1UpGjSygkGmAjnhXOMi86NCfzP0arbxSp/view?usp=sharing"
-  },
-  {
-    "id": 28,
-    "titulo": "Núcleo de Apoio Discente: relato de experiência sobre o protagonismo discente no IFSC Câmpus Canoinhas",
-    "autores": "Manuella Valentina Buttchewicz, Alice Elisa Soares, Eduarda Niejelski, Brenda Jacomel, Cleber Roberto Stange, Douglas André Würz",
-    "categoria": "Relatos",
-    "link": ""
   },
   {
     "id": 29,
@@ -314,13 +300,6 @@ const TRABALHOS_DATA = [
     "link": "https://drive.google.com/file/d/1WrwgZE4aFVshkN8peQtMgHDWl5yxuQOV/view?usp=drivesdk"
   },
   {
-    "id": 44,
-    "titulo": "Fenologia e requerimento térmico da videira ‘Itália’ cultivada na região do Planalto Norte Catarinense",
-    "autores": "Ingrid Raquel Novacki, Gabrieli Vitória Trisnoski, Caroline de Souza Wisniewski, Júlia Aimê Dybas, Douglas André Wurz",
-    "categoria": "Viticultura",
-    "link": ""
-  },
-  {
     "id": 45,
     "titulo": "Compatibilidade microbiológica e fotoproteção por nanopartículas de titânio (TiO2) em conídios de Beauveria bassiana",
     "autores": "Juliana Camargos de Freitas, Gabrieli Vitória Trisnoski, Thiago de Lima, Júlia Aimê Dybas, Andressa Antunes Bortoti, João Paulo Pereira Paes, Cícero Venâncio Nunes Júnior",
@@ -410,40 +389,5 @@ const TRABALHOS_DATA = [
     "autores": "Douglas André Würz, Júlia Aime Dybas, Ingrid Raquel Novacki",
     "categoria": "Viticultura",
     "link": "https://youtu.be/yMqZ9hzAmGs"
-  },
-  {
-    "id": 58,
-    "titulo": "Escrita de prompts na Comunicação Técnica: uma experiência de letramento crítico em inteligência artificial no ensino médio e na graduação",
-    "autores": "Ricardo de Campos",
-    "categoria": "Relatos",
-    "link": ""
-  },
-  {
-    "id": 59,
-    "titulo": "Projeto Ângulo: alfabetização midiática e argumentação no terceiro ano do Ensino Médio Integrado em Alimentos",
-    "autores": "Ricardo de Campos",
-    "categoria": "Relatos",
-    "link": ""
-  },
-  {
-    "id": 60,
-    "titulo": "Da leitura à resposta: interpretação literária por meio de gêneros discursivos no Ensino Médio Integrado",
-    "autores": "Ricardo de Campos",
-    "categoria": "Relatos",
-    "link": ""
-  },
-  {
-    "id": 61,
-    "titulo": "Leitura crítica de notícias e fake news: uma experiência de educação midiática nos segundos anos do Ensino Médio Integrado",
-    "autores": "Ricardo de Campos",
-    "categoria": "Relatos",
-    "link": ""
-  },
-  {
-    "id": 62,
-    "titulo": "Ensino da Comunicação Não Violenta por meio de um jogo de tabuleiro criado com o auxílio do ChatGPT",
-    "autores": "Ricardo de Campos",
-    "categoria": "Relatos",
-    "link": ""
   }
 ];
